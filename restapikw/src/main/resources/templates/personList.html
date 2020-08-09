@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Person Page</title>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link th:href="@{/assets/pages/css/profile.min.css}" rel="stylesheet"
+	type="text/css" />
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+</head>
+
+<body bgcolor="lightblue">
+
+	<br>
+	<br>
+	<div align="center">
+		<font face="Bradley Hand ITC" size="15"> Welcome to Person
+			Information Page! </font>
+		<div>
+			<table>
+				<thead>
+					<tr bgcolor="gray">
+						<th>ID</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Gender</th>
+						<th>Address</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr bgcolor="gray"
+						th:each="person : ${persons}">
+						<td th:text="${person.id}">
+						</td>
+						<td th:text="${person.firstName}"></td>
+						<td th:text="${person.lastName}"></td>
+						<td th:text="${person.gender}"></td>
+						<td th:text="${person.address}"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

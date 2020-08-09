@@ -1,0 +1,15 @@
+[{
+"id": "1",
+"firstName": "Dharmendra",
+"lastName": "Sahu",
+"gender": "Male",
+"address": "1132 Park Place Ave, Morissville NC 27560"
+},
+{
+"id": "2",
+"firstName": "Rajendra",
+"lastName": "Sahu",
+"gender": "Male",
+"address": "519 Taj Nagar Naubasta Kanpur"
+}
+]

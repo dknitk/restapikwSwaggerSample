@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Person Page</title>
+</head>
+
+<body bgcolor="lightblue">
+	
+	<br>
+	<br>
+	<div align="center">
+
+		<font face="Bradley Hand ITC" size="15">
+		Welcome to Person Information Page!
+		</font>
+		<div>
+			<table >
+				<thead>
+					<tr bgcolor="gray">
+						<th>ID</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Gender</th>
+						<th>Address</th>						
+					</tr>
+				</thead>
+				<tbody>
+					<tr  bgcolor="gray">
+						<td th:text="${person.id}"></td>
+						<td th:text="${person.firstName}"></td>
+						<td th:text="${person.lastName}"></td>
+						<td	th:text="${person.gender}"></td>
+						<td th:text="${person.address}"></td>
+						
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+	</div>
+
+
+</body>
+</html>
